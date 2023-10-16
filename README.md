@@ -2,7 +2,7 @@
 PlatformIO repository to develop the microcontroller software with the Micro-ROS framework for Robotic Neck capston project.
 
 <p align="left">
-  <img width="640" height="480" src="/docs/imgs/circuito.png">
+  <img width="600" height="440" src="/docs/imgs/circuito.png">
 </p>
 
 ## Description
@@ -38,7 +38,7 @@ TODO
 install the repository as a platformIO project:
 
 <p align="left">
-  <img width="380" height="270" src="/docs/imgs/git_clone_pio.png">
+  <img width="380" height="230" src="/docs/imgs/git_clone_pio.png">
 </p>
 
 the dependencies should take a while to download and compile the dependencies.
