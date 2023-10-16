@@ -31,7 +31,7 @@ TODO
 ### PCB
 
 <p align="center">
-  <img width="380" height="170" src="/docs/imgs/PCB.png">
+  <img width="300" height="170" src="/docs/imgs/PCB.png">
 </p>
 
 ## Install
