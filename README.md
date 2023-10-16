@@ -2,7 +2,7 @@
 PlatformIO repository to develop the microcontroller software with the Micro-ROS framework for Robotic Neck capston project.
 
 <p align="center">
-  <img width="480" height="270" src=".png">
+  <img width="420" height="270" src="/docs/imgs/circuito.png">
 </p>
 
 ## Description
@@ -28,11 +28,17 @@ TODO
 * Buck converter: [LM2596 DC-DC buck converter](https://es.aliexpress.com/item/1005004354573123.html?srcSns=sns_WhatsApp&spreadType=socialShare&bizType=ProductDetail&social_params=21155296584&aff_fcid=4f77adf0b9d74611a75504fb32662668-1697222479272-08118-_m06AhcS&tt=MG&aff_fsk=_m06AhcS&aff_platform=default&sk=_m06AhcS&aff_trace_key=4f77adf0b9d74611a75504fb32662668-1697222479272-08118-_m06AhcS&shareId=21155296584&businessType=ProductDetail&platform=AE&terminal_id=5a85732ff3724ddcb8680d0a8952b024&afSmartRedirect=y)
 * limit switch: [Creality model](https://es.aliexpress.com/item/1005001834951972.html?spm=a2g0o.productlist.main.9.3894oUWRoUWROB&algo_pvid=c2cab6e0-5eae-4ec9-9755-b381f5ca6279&aem_p4p_detail=202310131148017729036743569600004645563&algo_exp_id=c2cab6e0-5eae-4ec9-9755-b381f5ca6279-4&pdp_npi=4%40dis%21CLP%211489%211344.0%21%21%211.54%21%21%402103244b16972228814054994e172b%2112000017795457109%21sea%21CL%210%21AB&curPageLogUid=cORvOKONY65a&search_p4p_id=202310131148017729036743569600004645563_5)
 
+### PCB
+
+<p align="center">
+  <img width="380" height="170" src="/docs/imgs/PCB.png">
+</p>
+
 ## Install
 install the repository as a platformIO project:
 
 <p align="center">
-  <img width="480" height="270" src=".png">
+  <img width="280" height="170" src="/docs/imgs/git_clone_pio.png">
 </p>
 
 the dependencies should take a while to download and compile the dependencies.
@@ -77,8 +83,8 @@ ros2 topic pub /micro_ros_subcriber std_msgs/msg/Int32 data:\ 1\
 
 ## Examples
 All the examples have a description of how to use it in it:
-* [Publisher, subcriber and timer]()
-* [two encoders and motors]()
+* [Publisher, subcriber and timer](/src/examples/pub_sub_timer/main.cpp)
+* [two encoders and motors](/src/examples/two_enc_motor/main.cpp)
 
 ## Reference
 * [Micro-ROS Tutorial](https://micro.ros.org/docs/tutorials/core/overview/)
