@@ -2,7 +2,7 @@
 PlatformIO repository to develop the microcontroller software with the Micro-ROS framework for Robotic Neck capston project.
 
 ## Description
-TODO
+This repository will contain the code, libraries and other resources necessary for the successful programming and operation of the Robotic Neck system.
 
 ## Dependencies
 ### Software
@@ -15,6 +15,11 @@ TODO
 
 #### PlatfotmIO
 * [micro-ROS library](https://github.com/micro-ROS/micro_ros_platformio)
+
+### Low leven diagram
+<p align="left">
+  <img width="600" height="440" src="/docs/imgs/low level diagram.png">
+</p>
 
 ### Electrical schematic
 <p align="left">
