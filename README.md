@@ -44,6 +44,7 @@ For software, we used the Arduino framework because it simplifies interaction wi
 * Robotic Frameworks:
   * [ROS2 Humble (desktop)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
   * [Vulcanexus (base)](https://docs.vulcanexus.org/en/humble/rst/installation/linux_binary_installation.html)
+  * [Arduino](https://www.arduino.cc/reference/en/libraries/)
 * Microcontroller Framework: [Micro-ROS](https://micro.ros.org)
 * IDE: [PlatfotmIO on Visual Studio Code](https://platformio.org/install/ide?install=vscode)
 
@@ -53,7 +54,7 @@ For software, we used the Arduino framework because it simplifies interaction wi
 
 ### Hardware
 * Microcontroller: [Raspberry PI pico](https://es.aliexpress.com/item/1005005492271193.html?spm=a2g0o.detail.0.0.a300BYAXBYAXSc&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=80bd1aaa-1118-4132-9205-e19beda6f5bd&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:80bd1aaa-1118-4132-9205-e19beda6f5bd,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21CLP%213505%213505.0%21%21%213.95%21%21%40210324a716916205231051502e6731%2112000033294465105%21rec%21CL%21%21A&search_p4p_id=202308091535231367361898504487695602_0)
-* H-bridge: [TB6612FNG](https://es.aliexpress.com/item/32804187775.html?pdp_npi=2%40dis%21CLP%21CLP470%21CLP444%21%21%21%21%21%40210324a716916203262676043e6731%2112000034258280910%21btf&_t=pvid%3Aa1d9a860-e94b-40b5-a4a7-1f11fbd09405&afTraceInfo=32804187775__pc__pcBridgePPC__xxxxxx__1691620326&spm=a2g0o.ppclist.product.mainProduct&gatewayAdapt=glo2esp)
+* Double H bridge: [TB6612FNG](https://es.aliexpress.com/item/32804187775.html?pdp_npi=2%40dis%21CLP%21CLP470%21CLP444%21%21%21%21%21%40210324a716916203262676043e6731%2112000034258280910%21btf&_t=pvid%3Aa1d9a860-e94b-40b5-a4a7-1f11fbd09405&afTraceInfo=32804187775__pc__pcBridgePPC__xxxxxx__1691620326&spm=a2g0o.ppclist.product.mainProduct&gatewayAdapt=glo2esp)
 * Motors: [JGA12-N20 DC/Gear(50->1)/300RPM/6V](https://www.amazon.com/JGA12-N20-Motor-Speed-Encoder-3000rpm/dp/B0C2V9QTJ2?th=1)
 * IMU: [GY-87/MPU6050](https://es.aliexpress.com/item/1005005002758134.html?spm=a2g0o.productlist.main.31.2ce07181negliP&algo_pvid=87703ceb-05fc-443c-8466-862c884f6110&aem_p4p_detail=2023080815300810421502957714640017224522&algo_exp_id=87703ceb-05fc-443c-8466-862c884f6110-15&pdp_npi=4%40dis%21CLP%213918%213016.0%21%21%214.43%21%21%40210318b816915338088023396e2036%2112000031310085612%21sea%21CL%210%21A&curPageLogUid=CLX3FBmFSdhz&search_p4p_id=2023080815300810421502957714640017224522_16)
 * Buck converter: [LM2596 DC-DC buck converter](https://es.aliexpress.com/item/1005004354573123.html?srcSns=sns_WhatsApp&spreadType=socialShare&bizType=ProductDetail&social_params=21155296584&aff_fcid=4f77adf0b9d74611a75504fb32662668-1697222479272-08118-_m06AhcS&tt=MG&aff_fsk=_m06AhcS&aff_platform=default&sk=_m06AhcS&aff_trace_key=4f77adf0b9d74611a75504fb32662668-1697222479272-08118-_m06AhcS&shareId=21155296584&businessType=ProductDetail&platform=AE&terminal_id=5a85732ff3724ddcb8680d0a8952b024&afSmartRedirect=y)
@@ -97,8 +98,14 @@ It will be necessary to use a suitable power supply for the motors, in this case
 
 For configuration it will be necessary to use a compiler and interpretation language. C++ will be used as a language and as a compiler we will be using [PlatfotmIO](#PlatfotmIO)
 
-## Documentation
-TODO
+### Functionality of each module
+- Raspberrry Pi Pico: Microcontroller compatible with a variety of communication protocols, including UART, I2C, SPI, PWM, and more, enabling interaction with other devices and sensors through its diverse GPIO pins. Among other features, it has an ADC converter and can be programmed in various languages, including C++. It stands out for its ability to perform a wide range of tasks, making it suitable for a variety of applications, with good performance and low power consumption.
+- Double H bridge: 
+- Motors: 
+- IMU: 
+- Buck converter: It converts a higher input voltage into a lower output voltage while maintaining energy efficiency and ensuring a constant voltage even if the voltage varies.
+- Limit switch: 
+
 
 ## Tutorials
 * [Linux course for robotic](https://app.theconstructsim.com/courses/linux-for-robotics-40/)
