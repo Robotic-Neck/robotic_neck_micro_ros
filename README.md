@@ -6,11 +6,14 @@ This repository will contain the code, libraries and other resources necessary f
 ## Index
 
 - [Description](#Description)
-  - [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
-  - [Electrical schematic](#Electrical-schematic)
+  - [Diagrams](#Diagrams)
+    - [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
+    - [Electrical schematic](#Electrical-schematic)
 - [Dependencies](#Dependencies)
   - [Software](#Software)
   - [Hardware](#Hardware)
+- [Install](#Install)
+- [Documentation](#Documentation)
 
 ## Description
 El proyecto Robotic Neck focuses on the development of a robotic system that aims to expand the field of vision achievable with a single LIDAR by providing mobility in the pitch and roll axes.
@@ -38,7 +41,7 @@ This system is implemented using the Raspberry Pi Pico microcontroller to contro
 * IDE: [PlatfotmIO on Visual Studio Code](https://platformio.org/install/ide?install=vscode)
 
 #### PlatfotmIO
-* [micro-ROS library](https://github.com/micro-ROS/micro_ros_platformio)
+* [Micro-ROS library](https://github.com/micro-ROS/micro_ros_platformio)
 
 
 ### Hardware
@@ -62,7 +65,7 @@ Install the repository as a platformIO project:
   <img width="380" height="230" src="/docs/imgs/git_clone_pio.png">
 </p>
 
-the dependencies should take a while to download and compile the dependencies.
+The dependencies should take a while to download and compile the dependencies.
 
 ## Documentation
 TODO
