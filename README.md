@@ -12,7 +12,7 @@ This repository will contain the code, libraries and other resources necessary f
 - [Dependencies](#Dependencies)
   - [Software](#Software)
   - [Hardware](#Hardware)
-- [Install](#Install)
+- [Installation and configuration](#Installation-and-configuration)
 - [Documentation](#Documentation)
 
 ## Description
@@ -30,6 +30,13 @@ This system is implemented using the Raspberry Pi Pico microcontroller to contro
 <p align="left">
   <img width="600" height="440" src="/docs/imgs/circuito.png">
 </p>
+
+### Tools
+We chose to work with the [PlatfotmIO](#PlatfotmIO) tool over the Arduino IDE because it offers more configuration flexibility, can be managed as a GitHub repository, and allows you to leverage the advantages of Visual Studio Code.
+
+As the microcontroller, we selected the Raspberry Pi Pico for its high performance, low power consumption, pin count, and affordability. Additionally, its features make it compatible for using RTOS, which accelerates algorithm development.
+
+For software, we used the Arduino framework because it simplifies interaction with the board by treating it as a standard Arduino board, making it compatible with the vast number of libraries written for Arduino.
 
 ## Dependencies
 ### Software
@@ -86,6 +93,8 @@ Hardware configuration involves connecting and configuring the components:
 To make the connection you can be guided by the [Electrical schematic](#Electrical-schematic) according to the details described in [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system). Make sure everything is connected correctly.
 
 It will be necessary to use a suitable power supply, in this case the power supply allows us to adjust the voltage to 12V and with a maximum of 3 A.
+
+For configuration it will be necessary to use a compiler and interpretation language. C++ will be used as a language and as a compiler we will be using [PlatfotmIO](#PlatfotmIO)
 
 ## Documentation
 TODO
