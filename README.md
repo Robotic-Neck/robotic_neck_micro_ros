@@ -5,12 +5,12 @@ This repository will contain the code, libraries and other resources necessary f
 
 ## Index
 
-1. [Description](#Description)
-   1.1. [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
-   1.2. [Electrical schematic](#Electrical-schematic)
-2. [Dependencies](#Dependencies)
-   2.1. [Software](#Software)
-   2.2. [Hardware](#Hardware)
+- [Description](#Description)
+  - [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
+  - [Electrical schematic](#Electrical-schematic)
+- [Dependencies](#Dependencies)
+  - [Software](#Software)
+  - [Hardware](#Hardware)
 
 ## Description
 El proyecto Robotic Neck focuses on the development of a robotic system that aims to expand the field of vision achievable with a single LIDAR by providing mobility in the pitch and roll axes.
