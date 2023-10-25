@@ -3,13 +3,13 @@ PlatformIO repository to develop the microcontroller software with the Micro-ROS
 
 This repository will contain the code, libraries and other resources necessary for the successful programming and operation of the Robotic Neck system.
 
-## Indie
+## Index
 1. [Description](#Description)
-   1.1 [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
-   1.2 [Electrical schematic](#Electrical-schematic)
+   1.1. [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
+   1.2. [Electrical schematic](#Electrical-schematic)
 2. [Dependencies](#Dependencies)
-   2.1 [Software](#Software)
-   2.2 [Hardware](#Hardware)
+   2.1. [Software](#Software)
+   2.2. [Hardware](#Hardware)
 
 
 ## Description
