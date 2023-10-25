@@ -4,6 +4,7 @@ PlatformIO repository to develop the microcontroller software with the Micro-ROS
 This repository will contain the code, libraries and other resources necessary for the successful programming and operation of the Robotic Neck system.
 
 ## Index
+
 1. [Description](#Description)
    1.1. [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
    1.2. [Electrical schematic](#Electrical-schematic)
@@ -11,13 +12,12 @@ This repository will contain the code, libraries and other resources necessary f
    2.1. [Software](#Software)
    2.2. [Hardware](#Hardware)
 
-
 ## Description
 El proyecto Robotic Neck focuses on the development of a robotic system that aims to expand the field of vision achievable with a single LIDAR by providing mobility in the pitch and roll axes.
 
 This system is implemented using the Raspberry Pi Pico microcontroller to control and coordinate various functions and tasks related to the different modules within the structure's dynamics.
 
-### Diagramas
+### Diagrams
 #### Low level diagram of the electronic system
 <p align="left">
   <img width="600" height="440" src="/docs/imgs/low level diagram.png">
