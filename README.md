@@ -123,7 +123,6 @@ The micro-ROS communication protocol, which runs over the serial UART protocol, 
 
 The generated code is used to interact with the motors and limit switches.
 
-El protocol
 ## Tutorials
 * [Linux course for robotic](https://app.theconstructsim.com/courses/linux-for-robotics-40/)
 * [Basic C++ for robotic](https://app.theconstructsim.com/courses/59)
