@@ -16,9 +16,9 @@ This repository will contain the code, libraries and other resources necessary f
 - [Documentation](#Documentation)
 
 ## Description
-El proyecto Robotic Neck focuses on the development of a robotic system that aims to expand the field of vision achievable with a single LIDAR by providing mobility in the pitch and roll axes.
+The Robotic Neck project focuses on the development of a robotic system that aims to expand the field of view achievable with a single LIDAR by providing mobility in the pitch and roll axes through motor control.
 
-This system is implemented using the Raspberry Pi Pico microcontroller to control and coordinate various functions and tasks related to the different modules within the structure's dynamics.
+This system is implemented using the Raspberry Pi Pico microcontroller to control and coordinate various functions and tasks related to the different modules within the dynamics of the structure.
 
 ### Diagrams
 #### Low level diagram of the electronic system
@@ -57,15 +57,35 @@ Our PCB design:
 <p align="left">
   <img width="380" height="270" src="/docs/imgs/PCB.png">
 </p>
+We sought to optimize the space so that it was compatible with the structure of the platform. It has space reserved for the Raspberry Pi Pico and the double H-bridge. In addition, the connections were organized so that they were orderly and avoid disconnection problems.
 
-## Install
+## Installation and configuration
+To put this system into operation, it is important to follow a series of installation and configuration steps.
+
+
+### Installing ROS 2
+To install ROS 2 on the Raspberry Pi Pico, follow the instructions provided in the official ROS 2 documentation [Software](#Software).
+
+### Installing PlatformIO
+To install PlatformIO in your development environment, you can follow the instructions provided in the official PlatformIO documentation. [Software](#Software).
+
 Install the repository as a platformIO project:
-
 <p align="left">
   <img width="380" height="230" src="/docs/imgs/git_clone_pio.png">
 </p>
-
 The dependencies should take a while to download and compile the dependencies.
+
+### Hardware Configuration
+Hardware configuration involves connecting and configuring the components:
+- Raspberry Pi Pico
+- Double H bridge
+- Motors with encoders
+- Limit switches
+- Buck converter
+- IMU
+To make the connection you can be guided by the [Electrical schematic](#Electrical-schematic) according to the details described in [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system). Make sure everything is connected correctly.
+
+It will be necessary to use a suitable power supply, in this case the power supply allows us to adjust the voltage to 12V and with a maximum of 3 A.
 
 ## Documentation
 TODO
