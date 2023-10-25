@@ -48,13 +48,12 @@ For software, we used the Arduino framework because it simplifies interaction wi
 * Robotic Frameworks:
   * [ROS2 Humble (desktop)](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
   * [Vulcanexus (base)](https://docs.vulcanexus.org/en/humble/rst/installation/linux_binary_installation.html)
-  * [Arduino](https://www.arduino.cc/reference/en/libraries/)
+  * [Arduino library](https://www.arduino.cc/reference/en/libraries/)
 * Microcontroller Framework: [Micro-ROS](https://micro.ros.org)
 * IDE: [PlatfotmIO on Visual Studio Code](https://platformio.org/install/ide?install=vscode)
 
 #### PlatfotmIO
 * [Micro-ROS library](https://github.com/micro-ROS/micro_ros_platformio)
-
 
 ### Hardware
 * Microcontroller: [Raspberry PI pico](https://es.aliexpress.com/item/1005005492271193.html?spm=a2g0o.detail.0.0.a300BYAXBYAXSc&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=80bd1aaa-1118-4132-9205-e19beda6f5bd&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:80bd1aaa-1118-4132-9205-e19beda6f5bd,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21CLP%213505%213505.0%21%21%213.95%21%21%40210324a716916205231051502e6731%2112000033294465105%21rec%21CL%21%21A&search_p4p_id=202308091535231367361898504487695602_0)
@@ -115,7 +114,16 @@ For configuration it will be necessary to use a compiler and interpretation lang
 
 - Limit switch: Detects and limits the mechanical movement of the system when a specific position is reached in addition to establishing an origin position or reference point.
 
-For more information review [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
+For more information review [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system) y [Hardware](#Hardware)
+
+## Documentation
+Micro-ROS is used as an RTOS and communication protocol. This secondary framework resembles the program development of a ROS2 node written in C++, greatly standardizing the code and facilitating scalability.
+
+The micro-ROS communication protocol, which runs over the serial UART protocol, enables the inclusion of publishers and subscribers from the microcontroller to the connected operating system through the micro-ROS agent node.
+
+The generated code is used to interact with the motors and limit switches.
+
+El protocol
 ## Tutorials
 * [Linux course for robotic](https://app.theconstructsim.com/courses/linux-for-robotics-40/)
 * [Basic C++ for robotic](https://app.theconstructsim.com/courses/59)
