@@ -3,13 +3,24 @@ PlatformIO repository to develop the microcontroller software with the Micro-ROS
 
 This repository will contain the code, libraries and other resources necessary for the successful programming and operation of the Robotic Neck system.
 
+## Indie
+1. [Description](#Description)
+2. [Dependencies](#Dependencies)
+
 ## Description
 El proyecto Robotic Neck focuses on the development of a robotic system that aims to expand the field of vision achievable with a single LIDAR by providing mobility in the pitch and roll axes.
 
 This system is implemented using the Raspberry Pi Pico microcontroller to control and coordinate various functions and tasks related to the different modules within the structure's dynamics.
 
-## Indie
-1. [Dependencies](#Dependencies)
+### Low level diagram of the electronic system
+<p align="left">
+  <img width="600" height="440" src="/docs/imgs/low level diagram.png">
+</p>
+
+### Electrical schematic
+<p align="left">
+  <img width="600" height="440" src="/docs/imgs/circuito.png">
+</p>
 
 ## Dependencies
 ### Software
@@ -23,17 +34,18 @@ This system is implemented using the Raspberry Pi Pico microcontroller to contro
 #### PlatfotmIO
 * [micro-ROS library](https://github.com/micro-ROS/micro_ros_platformio)
 
-### Low level diagram of the electronic system
+### Electronic system
+#### Low level diagram of the electronic system
 <p align="left">
   <img width="600" height="440" src="/docs/imgs/low level diagram.png">
 </p>
 
-### Electrical schematic
+#### Electrical schematic
 <p align="left">
   <img width="600" height="440" src="/docs/imgs/circuito.png">
 </p>
 
-### Hardware
+#### Hardware
 * Microcontroller: [Raspberry PI pico](https://es.aliexpress.com/item/1005005492271193.html?spm=a2g0o.detail.0.0.a300BYAXBYAXSc&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=80bd1aaa-1118-4132-9205-e19beda6f5bd&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:80bd1aaa-1118-4132-9205-e19beda6f5bd,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21CLP%213505%213505.0%21%21%213.95%21%21%40210324a716916205231051502e6731%2112000033294465105%21rec%21CL%21%21A&search_p4p_id=202308091535231367361898504487695602_0)
 * H-bridge: [TB6612FNG](https://es.aliexpress.com/item/32804187775.html?pdp_npi=2%40dis%21CLP%21CLP470%21CLP444%21%21%21%21%21%40210324a716916203262676043e6731%2112000034258280910%21btf&_t=pvid%3Aa1d9a860-e94b-40b5-a4a7-1f11fbd09405&afTraceInfo=32804187775__pc__pcBridgePPC__xxxxxx__1691620326&spm=a2g0o.ppclist.product.mainProduct&gatewayAdapt=glo2esp)
 * Motors: [JGA12-N20 DC/Gear(50->1)/300RPM/6V](https://www.amazon.com/JGA12-N20-Motor-Speed-Encoder-3000rpm/dp/B0C2V9QTJ2?th=1)
@@ -41,7 +53,7 @@ This system is implemented using the Raspberry Pi Pico microcontroller to contro
 * Buck converter: [LM2596 DC-DC buck converter](https://es.aliexpress.com/item/1005004354573123.html?srcSns=sns_WhatsApp&spreadType=socialShare&bizType=ProductDetail&social_params=21155296584&aff_fcid=4f77adf0b9d74611a75504fb32662668-1697222479272-08118-_m06AhcS&tt=MG&aff_fsk=_m06AhcS&aff_platform=default&sk=_m06AhcS&aff_trace_key=4f77adf0b9d74611a75504fb32662668-1697222479272-08118-_m06AhcS&shareId=21155296584&businessType=ProductDetail&platform=AE&terminal_id=5a85732ff3724ddcb8680d0a8952b024&afSmartRedirect=y)
 * Limit switch: [Creality model](https://es.aliexpress.com/item/1005001834951972.html?spm=a2g0o.productlist.main.9.3894oUWRoUWROB&algo_pvid=c2cab6e0-5eae-4ec9-9755-b381f5ca6279&aem_p4p_detail=202310131148017729036743569600004645563&algo_exp_id=c2cab6e0-5eae-4ec9-9755-b381f5ca6279-4&pdp_npi=4%40dis%21CLP%211489%211344.0%21%21%211.54%21%21%402103244b16972228814054994e172b%2112000017795457109%21sea%21CL%210%21AB&curPageLogUid=cORvOKONY65a&search_p4p_id=202310131148017729036743569600004645563_5)
 
-### PCB
+#### PCB
 Our PCB design:
 <p align="left">
   <img width="380" height="270" src="/docs/imgs/PCB.png">
