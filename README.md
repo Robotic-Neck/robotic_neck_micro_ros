@@ -5,11 +5,11 @@ This repository will contain the code, libraries and other resources necessary f
 
 ## Indie
 1. [Description](#Description)
-  1.1 [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
-  1.2 [Electrical schematic](#Electrical-schematic)
+   1.1 [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
+   1.2 [Electrical schematic](#Electrical-schematic)
 2. [Dependencies](#Dependencies)
-  2.1 [Software](#Software)
-  2.2 [Hardware](#Hardware)
+   2.1 [Software](#Software)
+   2.2 [Hardware](#Hardware)
 
 
 ## Description
