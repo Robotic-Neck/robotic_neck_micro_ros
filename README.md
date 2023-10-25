@@ -5,11 +5,11 @@ This repository will contain the code, libraries and other resources necessary f
 
 ## Indie
 1. [Description](#Description)
-   1. [Low level diagram of the electronic system](#Low level diagram of the electronic system)
-   2. [Electrical schematic](#Electrical schematic)
+  1.1 [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system)
+  1.2 [Electrical schematic](#Electrical-schematic)
 2. [Dependencies](#Dependencies)
-   1. [Software](#Software)
-   2. [Hardware](#Hardware)
+  2.1 [Software](#Software)
+  2.2 [Hardware](#Hardware)
 
 
 ## Description
@@ -17,12 +17,13 @@ El proyecto Robotic Neck focuses on the development of a robotic system that aim
 
 This system is implemented using the Raspberry Pi Pico microcontroller to control and coordinate various functions and tasks related to the different modules within the structure's dynamics.
 
-### Low level diagram of the electronic system
+### Diagramas
+#### Low level diagram of the electronic system
 <p align="left">
   <img width="600" height="440" src="/docs/imgs/low level diagram.png">
 </p>
 
-### Electrical schematic
+#### Electrical schematic
 <p align="left">
   <img width="600" height="440" src="/docs/imgs/circuito.png">
 </p>
