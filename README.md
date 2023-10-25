@@ -13,7 +13,11 @@ This repository will contain the code, libraries and other resources necessary f
   - [Software](#Software)
   - [Hardware](#Hardware)
 - [Installation and configuration](#Installation-and-configuration)
-- [Documentation](#Documentation)
+- [Functionality of each module](#Functionality-of-each-module)
+- [Tutorials](#Tutorials)
+- [Demo](#Demo)
+- [Examples](#Examples)
+- [Reference](#Reference)
 
 ## Description
 The Robotic Neck project focuses on the development of a robotic system that aims to expand the field of view achievable with a single LIDAR by providing mobility in the pitch and roll axes through motor control.
@@ -100,7 +104,7 @@ For configuration it will be necessary to use a compiler and interpretation lang
 
 ### Functionality of each module
 - Raspberrry Pi Pico: Microcontroller compatible with a variety of communication protocols, including UART, I2C, SPI, PWM, and more, enabling interaction with other devices and sensors through its diverse GPIO pins. Among other features, it has an ADC converter and can be programmed in various languages, including C++. It stands out for its ability to perform a wide range of tasks, making it suitable for a variety of applications, with good performance and low power consumption.
-- Double H bridge: 
+- Double H bridge: Electronic circuit used to control the direction and speed of an electric motor independently through two channels using PWM signals from the microcontroller. The direction is controlled by opening and closing switches in different configurations, and the speed is determined by the applied voltage.
 - Motors: 
 - IMU: 
 - Buck converter: It converts a higher input voltage into a lower output voltage while maintaining energy efficiency and ensuring a constant voltage even if the voltage varies.
