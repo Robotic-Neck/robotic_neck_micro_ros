@@ -1,5 +1,5 @@
 # robotic_neck_micro_ros
-PlatformIO repository to develop the microcontroller software with the Micro-ROS framework for Robotic Neck capston project.
+PlatformIO repository to develop the microcontroller software with the Micro-ROS framework for the Robotic Neck project produced for the Design of Robotic Systems (Capston) course.
 
 This repository will contain the code, libraries and other resources necessary for the successful programming and operation of the Robotic Neck system.
 
@@ -64,7 +64,7 @@ Our PCB design:
 <p align="left">
   <img width="380" height="270" src="/docs/imgs/PCB.png">
 </p>
-We sought to optimize the space so that it was compatible with the structure of the platform. It has space reserved for the Raspberry Pi Pico and the double H-bridge. In addition, the connections were organized so that they were orderly and avoid disconnection problems.
+We sought to optimize the space so that it was compatible with the structure of the platform. It has areas reserved for the Raspberry Pi Pico and the double H-bridge. In addition, the connections were organized so that they were orderly and avoided disconnection problems.
 
 ## Installation and configuration
 To put this system into operation, it is important to follow a series of installation and configuration steps.
@@ -76,7 +76,7 @@ To install ROS 2 on the Raspberry Pi Pico, follow the instructions provided in t
 ### Installing PlatformIO
 To install PlatformIO in your development environment, you can follow the instructions provided in the official PlatformIO documentation. [Software](#Software).
 
-Install the repository as a platformIO project:
+#### Install the repository as a platformIO project:
 <p align="left">
   <img width="380" height="230" src="/docs/imgs/git_clone_pio.png">
 </p>
@@ -90,9 +90,10 @@ Hardware configuration involves connecting and configuring the components:
 - Limit switches
 - Buck converter
 - IMU
+
 To make the connection you can be guided by the [Electrical schematic](#Electrical-schematic) according to the details described in [Low level diagram of the electronic system](#Low-level-diagram-of-the-electronic-system). Make sure everything is connected correctly.
 
-It will be necessary to use a suitable power supply, in this case the power supply allows us to adjust the voltage to 12V and with a maximum of 3 A.
+It will be necessary to use a suitable power supply for the motors, in this case the power supply allows us to adjust the voltage to 12V and with a maximum of 3 A. The rest of the components will be powered through the USB - Micro USB connection between the personal computer and the microcontroller.
 
 For configuration it will be necessary to use a compiler and interpretation language. C++ will be used as a language and as a compiler we will be using [PlatfotmIO](#PlatfotmIO)
 
