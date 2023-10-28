@@ -3,10 +3,16 @@
 
 #include "Arduino.h"
 
-// confing encoders Pins
-#define LSPin 21
+// confing limit switch Pins
+#define LSPinRIGHT 12
+#define LSPinLEFT 13
+
+// the limit switch is a normally high (PULLUP)
+extern char ls_right_state;
+extern char ls_left_state;
+extern char last_ls_right_state;
+extern char last_ls_left_state;
 
 void limit_switch_setup();
-void limit_switch_cb();
 
 #endif
