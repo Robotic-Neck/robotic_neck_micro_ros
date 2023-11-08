@@ -4,9 +4,14 @@
 #include "Arduino.h"
 
 // confing encoders Pins
-#define LSPin 21
+#define LSPinRIGHT 9
+#define LSPinLEFT 13
+
+extern char ls_right_state;
+extern char ls_left_state;
+extern char last_ls_right_state;
+extern char last_ls_left_state;
 
 void limit_switch_setup();
-void limit_switch_cb();
 
 #endif

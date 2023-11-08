@@ -6,9 +6,11 @@
 #include <rclc/executor.h>
 
 #include <std_msgs/msg/int16.h>
+#include <std_msgs/msg/empty.h>
 
 #include "../../h_bridge/h_bridge.hpp"
 #include "../../encoder/encoder.hpp"
+#include "../../limit_switch/limit_switch.hpp"
 
 rcl_allocator_t allocator;
 rclc_support_t support;
@@ -19,6 +21,12 @@ std_msgs__msg__Int16 pub_enc_left_msg;
 
 rcl_publisher_t publisher_enc_right;
 std_msgs__msg__Int16 pub_enc_right_msg;
+
+rcl_publisher_t publisher_ls_right;
+std_msgs__msg__Empty ls_right_msg;
+
+rcl_publisher_t publisher_ls_left;
+std_msgs__msg__Int16 ls_left_msg;
 
 rcl_subscription_t subscriber_motor_left;
 std_msgs__msg__Int16 sub_motor_left_msg;

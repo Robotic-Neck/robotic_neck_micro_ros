@@ -49,6 +49,7 @@ void setup() {
 
   h_bridge_setup();
   encoder_setup();
+  limit_switch_setup();
 
   microros_setup();
   microros_add_pubs();
@@ -92,6 +93,18 @@ void microros_add_pubs(){
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int16),
     "rpip/encoder_right_pub"));
+  
+  RCCHECK(rclc_publisher_init_default( // create publisher
+    &publisher_ls_left,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Empty),
+    "rpip/ls_left_pub"));
+
+  RCCHECK(rclc_publisher_init_default( // create publisher
+    &publisher_ls_right,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Empty),
+    "rpip/ls_right_pub"));
 }
 
 // ---- MICROROS SUB -----
@@ -100,13 +113,13 @@ void microros_add_subs(){
     &subscriber_motor_left, 
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int16), 
-    "rpip/motor_left_sub"));
+    "rpip/motor_right_sub"));
 
   RCCHECK(rclc_subscription_init_default( // create subscriber
     &subscriber_motor_right, 
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int16), 
-    "rpip/motor_right_sub"));
+    "rpip/motor_left_sub"));
 }
 
 void sub_ml_callback(const void * msgin){
@@ -139,6 +152,22 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time) {
 
     RCSOFTCHECK(rcl_publish(&publisher_enc_left, &pub_enc_left_msg, NULL));
     RCSOFTCHECK(rcl_publish(&publisher_enc_right, &pub_enc_right_msg, NULL));
+
+    if (timer != NULL) {
+    ls_right_state = digitalRead(LSPinRIGHT);
+    ls_left_state = digitalRead(LSPinLEFT);
+
+    if (ls_right_state == LOW && last_ls_right_state == HIGH){
+      RCSOFTCHECK(rcl_publish(&publisher_ls_right, &ls_right_msg, NULL));
+    }
+
+    if (ls_left_state == LOW && last_ls_left_state == HIGH){
+      RCSOFTCHECK(rcl_publish(&publisher_ls_left, &ls_left_msg, NULL));
+    }
+
+    last_ls_right_state = ls_right_state;
+    last_ls_left_state = ls_left_state;
+  }
   }
 }
 
