@@ -39,7 +39,7 @@ references:
 
 #include "variables.hpp"
 
-unsigned int num_handles = 4;   // 2 subscriber (max:5), 2 publisher (max:10)
+unsigned int num_handles = 6;   // 2 subscriber (max:5), 4 publisher (max:10)
 
 void setup() {
   // turn the LED on (HIGH is the voltage level)
