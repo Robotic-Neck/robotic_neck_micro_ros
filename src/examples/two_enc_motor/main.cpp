@@ -124,12 +124,12 @@ void microros_add_subs(){
 
 void sub_ml_callback(const void * msgin){
   const std_msgs__msg__Int16 *msg = (const std_msgs__msg__Int16 *) msgin;
-  h_bridge_set_pwm(LEFT, msg->data);
+  h_bridge_set_pwm(RIGHT, -msg->data);
 }
 
 void sub_mr_callback(const void * msgin){
   const std_msgs__msg__Int16 *msg = (const std_msgs__msg__Int16 *) msgin;
-  h_bridge_set_pwm(RIGHT, -msg->data);
+  h_bridge_set_pwm(LEFT, -msg->data);
 }
 
 // ---- MICROROS TIMERS -----
