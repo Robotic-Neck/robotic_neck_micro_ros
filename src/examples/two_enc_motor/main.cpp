@@ -59,8 +59,8 @@ void setup() {
 }
 
 void loop() {
-  delay(10);
-  RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+  //delay(10);
+  RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
 }
 
 // ---- MICROROS SETUP -----
@@ -129,7 +129,7 @@ void sub_ml_callback(const void * msgin){
 
 void sub_mr_callback(const void * msgin){
   const std_msgs__msg__Int16 *msg = (const std_msgs__msg__Int16 *) msgin;
-  h_bridge_set_pwm(RIGHT, msg->data);
+  h_bridge_set_pwm(RIGHT, -msg->data);
 }
 
 // ---- MICROROS TIMERS -----
@@ -153,10 +153,10 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time) {
     RCSOFTCHECK(rcl_publish(&publisher_enc_left, &pub_enc_left_msg, NULL));
     RCSOFTCHECK(rcl_publish(&publisher_enc_right, &pub_enc_right_msg, NULL));
 
-    if (timer != NULL) {
+    /*
     ls_right_state = digitalRead(LSPinRIGHT);
     ls_left_state = digitalRead(LSPinLEFT);
-
+  
     if (ls_right_state == LOW && last_ls_right_state == HIGH){
       RCSOFTCHECK(rcl_publish(&publisher_ls_right, &ls_right_msg, NULL));
     }
@@ -167,16 +167,16 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time) {
 
     last_ls_right_state = ls_right_state;
     last_ls_left_state = ls_left_state;
-  }
+    */
   }
 }
 
 // ---- MICROROS EXECUTOR -----
 void microros_add_executor(){
   RCCHECK(rclc_executor_init(&executor, &support.context, num_handles, &allocator));
-  RCCHECK(rclc_executor_add_timer(&executor, &timer));
   RCCHECK(rclc_executor_add_subscription(&executor, &subscriber_motor_left, &sub_motor_left_msg, &sub_mr_callback, ON_NEW_DATA));
   RCCHECK(rclc_executor_add_subscription(&executor, &subscriber_motor_right, &sub_motor_right_msg, &sub_ml_callback, ON_NEW_DATA));
+  RCCHECK(rclc_executor_add_timer(&executor, &timer));
 }
 
 // Error handle loop

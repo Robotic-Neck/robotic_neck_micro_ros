@@ -53,5 +53,5 @@ void h_bridge_set_pwm(int INA, int INB, int pwm)
 void h_bridge_pwm(int pwm_r, int pwm_l)
 {
     h_bridge_set_pwm(RIGHT, pwm_r);
-    h_bridge_set_pwm(LEFT, -pwm_l);
+    h_bridge_set_pwm(LEFT, pwm_l);
 }
