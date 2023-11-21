@@ -5,7 +5,7 @@
 
 // confing encoders Pins
 #define LSPinRIGHT 9
-#define LSPinLEFT 13
+#define LSPinLEFT 1
 
 extern char ls_right_state;
 extern char ls_left_state;

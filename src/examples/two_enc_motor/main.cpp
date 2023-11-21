@@ -39,7 +39,7 @@ references:
 
 #include "variables.hpp"
 
-unsigned int num_handles = 6;   // 2 subscriber (max:5), 4 publisher (max:10)
+unsigned int num_handles = 3;   // 2 subscriber (max:5), 1 timer (4 publisher,max:10)
 
 void setup() {
   // turn the LED on (HIGH is the voltage level)
@@ -58,8 +58,9 @@ void setup() {
   microros_add_executor();
 }
 
+
 void loop() {
-  //delay(10);
+  delay(10);
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
 }
 
@@ -153,7 +154,6 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time) {
     RCSOFTCHECK(rcl_publish(&publisher_enc_left, &pub_enc_left_msg, NULL));
     RCSOFTCHECK(rcl_publish(&publisher_enc_right, &pub_enc_right_msg, NULL));
 
-    /*
     ls_right_state = digitalRead(LSPinRIGHT);
     ls_left_state = digitalRead(LSPinLEFT);
   
@@ -167,7 +167,6 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time) {
 
     last_ls_right_state = ls_right_state;
     last_ls_left_state = ls_left_state;
-    */
   }
 }
 
