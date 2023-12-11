@@ -101,6 +101,8 @@ It will be necessary to use a suitable power supply for the motors, in this case
 
 For configuration it will be necessary to use a compiler and interpretation language. C++ will be used as a language and as a compiler we will be using [PlatfotmIO](#PlatfotmIO)
 
+Currently, we are using the Arduino framework to program the RPI Pico. Among the available options, we have chosen the stable version of this framework, which lacks support for I2C communication. We utilize this version to connect most devices, except for the IMU. To address this issue, we've adopted a solution involving the use of two microcontrollers. The second one is specifically dedicated to reading data from the IMU using the developmental version of the Arduino framework, enabling the establishment of I2C communication through the Arduino Uno module. This approach has allowed us to maintain compatibility with Micro-ROS using the Raspberry Pi Pico while leveraging previously developed code.
+
 ### Functionality of each module
 - Raspberrry Pi Pico: Microcontroller compatible with a variety of communication protocols, including UART, I2C, SPI, PWM, and more, enabling interaction with other devices and sensors through its diverse GPIO pins. Among other features, it has an ADC converter and can be programmed in various languages, including C++. It stands out for its ability to perform a wide range of tasks, making it suitable for a variety of applications, with good performance and low power consumption.
 
